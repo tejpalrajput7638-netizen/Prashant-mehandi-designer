@@ -275,3 +275,12 @@ nav ul{
 }
 
    }
+.hero{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+    url("images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
