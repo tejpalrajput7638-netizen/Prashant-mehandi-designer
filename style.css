@@ -132,3 +132,146 @@ nav ul li a:hover{
 50%{transform:scale(1.08);}
 100%{transform:scale(1);}
 }
+/* ==========================
+   ABOUT SECTION
+========================== */
+
+.about{
+    padding:100px 8%;
+    text-align:center;
+    background:#161616;
+}
+
+.about h2{
+    font-size:42px;
+    color:#FFD700;
+    margin-bottom:20px;
+}
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* ==========================
+   GALLERY
+========================== */
+
+#gallery1,
+#gallery2{
+    padding:90px 8%;
+    background:#101010;
+}
+
+#gallery1 h2,
+#gallery2 h2{
+    text-align:center;
+    font-size:42px;
+    color:#FFD700;
+    margin-bottom:40px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.gallery img{
+    width:100%;
+    height:330px;
+    object-fit:cover;
+    border-radius:20px;
+    border:3px solid #FFD700;
+    transition:.5s;
+    box-shadow:0 10px 25px rgba(255,215,0,.25);
+}
+
+.gallery img:hover{
+    transform:translateY(-10px) scale(1.05);
+    box-shadow:0 20px 40px rgba(255,215,0,.6);
+}
+
+/* ==========================
+   CONTACT
+========================== */
+
+#contact{
+    padding:90px 8%;
+    text-align:center;
+    background:#161616;
+}
+
+#contact h2{
+    color:#FFD700;
+    font-size:40px;
+    margin-bottom:25px;
+}
+
+#contact p{
+    font-size:20px;
+    margin:12px 0;
+}
+
+/* ==========================
+   WHATSAPP BUTTON
+========================== */
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    background:#25D366;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:32px;
+    text-decoration:none;
+    box-shadow:0 0 25px rgba(37,211,102,.7);
+    animation:floatbtn 1.8s infinite;
+    z-index:999;
+}
+
+@keyframes floatbtn{
+0%{transform:scale(1);}
+50%{transform:scale(1.1);}
+100%{transform:scale(1);}
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+nav{
+    padding:15px 20px;
+}
+
+nav ul{
+    display:none;
+}
+
+.hero-content h1{
+    font-size:38px;
+}
+
+.hero-content p{
+    font-size:18px;
+}
+
+.logo{
+    font-size:22px;
+}
+
+.gallery img{
+    height:260px;
+}
+
+   }
